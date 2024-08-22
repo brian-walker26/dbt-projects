@@ -40,3 +40,8 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+
+
+    # Applies to all files under models/clean_orders_ex/
+    clean_orders_ex:
+      +materialized: table  # or "view" para crear vista en snowflake en vez de usar datos incrementales
